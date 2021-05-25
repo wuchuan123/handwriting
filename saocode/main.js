@@ -1,0 +1,1 @@
+var arr= [].shift.call(arguments)  //可以取出伪数组的第一个元素 相当于arguments.shift()
