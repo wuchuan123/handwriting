@@ -8,5 +8,5 @@ Function.prototype.apply2 = function (content = window) {
   }
   delete content.fn;
   return result;
-  // jw
+  // jwww
 };
