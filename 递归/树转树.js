@@ -6,9 +6,9 @@ const generateTreeData = (childrenLabel) => {
   return childrenLabel.map((item) => {
     const { value, code, child } = item;
     const treeNode = {
-      value,
+      title:value,
       children: null,
-      code,
+      id:code,
     };
     if (child) {
       treeNode.children = generateTreeData(child);
