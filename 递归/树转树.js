@@ -9,7 +9,6 @@ const generateTreeData = (childrenLabel) => {
       value,
       children: null,
       code,
-      pid: null,
     };
     if (child) {
       treeNode.children = generateTreeData(child);
