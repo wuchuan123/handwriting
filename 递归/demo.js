@@ -13,11 +13,7 @@ let arr = [
     for (const item of data) {
       if (item.pid === pid) {
         const newItem = { ...item, children: [] };
-        // newItem={ id: 1, name: "部门1", pid: 0 ,children:[]},  1
-        // newItem={ id: 2, name: "部门2", pid: 1 .children:[]}, 2
         result.push(newItem);
-        // result=newItem.children
-        //  item.id=1
         getChildren(data, newItem.children, item.id);
       }
     }

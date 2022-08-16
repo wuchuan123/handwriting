@@ -41,4 +41,14 @@ let arr = [
   //   },
   // ];
 
-  
+const arrToTree=(arr,result=[],pid)=>{
+     arr.forEach(item=>{
+        if(item.pid==pid){
+            const newItem={...item,children:[]}
+            result.push(newItem)
+            arrToTree(arr,newItem.children,item.id)
+        }
+    })
+    return result
+}
+console.log(arrToTree(arr,[],0))
